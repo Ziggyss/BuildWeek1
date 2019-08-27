@@ -184,6 +184,9 @@ a {
   align-items: center;
   padding-right: 5rem;
 }
+.jumbo {
+  background-color: #ebebe1;
+}
 .jumboIcon {
   height: 10rem;
 }
