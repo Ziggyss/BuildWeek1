@@ -170,12 +170,18 @@ a {
   width: 100%;
   height: 5rem;
   border-bottom: black solid 1px;
+  background-color: #b6c8a9;
 }
 .leftNav {
   width: 50%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+@media (max-width:500px) {
+  .leftNav .features {
+    display: none;
+  }
 }
 .rightNav {
   width: 50%;
@@ -187,6 +193,11 @@ a {
 .jumbo {
   background-color: #ebebe1;
 }
+@media (max-width:500px) {
+  .jumbo {
+    max-width: 500px;
+  }
+}
 .jumboIcon {
   height: 10rem;
 }
@@ -197,11 +208,23 @@ a {
   justify-content: flex-end;
   align-items: flex-end;
 }
+@media (max-width:500px) {
+  .leftTitle {
+    width: 100%;
+    padding-right: 3em;
+  }
+}
 .rightTitle {
   width: 100%;
   height: 9rem;
   display: flex;
   justify-content: center;
+}
+@media (max-width:500px) {
+  .rightTitle {
+    width: 100%;
+    padding-right: 3em;
+  }
 }
 .lowerJumbo {
   display: flex;
@@ -227,4 +250,9 @@ a {
   background-color: white;
   color: #4c812b;
   border: #4c812b solid 2px;
+}
+@media (max-width:500px) {
+  .mainImage {
+    max-width: 500px;
+  }
 }

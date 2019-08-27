@@ -9,6 +9,8 @@
     width: 100%;
     height: 5rem;
     border-bottom: black solid 1px;
+    background-color: #b6c8a9;
+
 }
 
 .leftNav {
@@ -16,7 +18,13 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center; 
+    .features {
+        @media(@phone){
+            display: none;
+        }
+    }
 }
+
 .rightNav {
    
     width: 50%;
