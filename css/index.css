@@ -160,10 +160,6 @@ a {
   font-family: 'Roboto';
   color: black;
 }
-.mainButton {
-  font-size: 3.6rem;
-  font-family: 'Roboto';
-}
 .navIcon {
   height: 2.4rem;
 }
@@ -172,7 +168,7 @@ a {
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  height: 5em;
+  height: 5rem;
   border-bottom: black solid 1px;
 }
 .leftNav {
@@ -187,4 +183,32 @@ a {
   justify-content: flex-end;
   align-items: center;
   padding-right: 5rem;
+}
+.jumboIcon {
+  height: 10rem;
+}
+.leftTitle {
+  width: 50%;
+  height: 18rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.rightTitle {
+  width: 100%;
+  height: 9rem;
+  display: flex;
+  justify-content: center;
+}
+.lowerJumbo {
+  display: flex;
+  flex-direction: column;
+  height: 23em;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 5rem;
+}
+.mainButton {
+  font-size: 3.6rem;
+  font-family: 'Roboto';
 }
