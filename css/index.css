@@ -179,8 +179,10 @@ a {
   justify-content: space-evenly;
   width: 100%;
   height: 5rem;
-  border-bottom: black solid 1px;
+  border-bottom: white solid 1px;
   background-color: #b6c8a9;
+  position: fixed;
+  top: 0;
 }
 .leftNav {
   width: 50%;
@@ -283,6 +285,7 @@ a {
   padding-top: 3rem;
   padding-bottom: 3rem;
   background-color: #ebebe1;
+  border-bottom: solid white 1px;
 }
 .featuresInfo {
   background-color: #ebebe1;
