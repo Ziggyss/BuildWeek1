@@ -1,3 +1,9 @@
+.boxFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -151,8 +157,12 @@ h2 {
   font-size: 6.4rem;
   font-family: 'Roboto';
 }
-p {
+h3 {
   font-size: 2.4rem;
+  font-family: 'Roboto';
+}
+p {
+  font-size: 1.8rem;
   font-family: 'Roboto';
 }
 a {
@@ -178,8 +188,13 @@ a {
   justify-content: space-evenly;
   align-items: center;
 }
+@media (max-width:800px) {
+  .leftNav .featuresAnchor {
+    display: none;
+  }
+}
 @media (max-width:500px) {
-  .leftNav .features {
+  .leftNav .featuresAnchor {
     display: none;
   }
 }
@@ -207,6 +222,12 @@ a {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+}
+@media (max-width:800px) {
+  .leftTitle {
+    width: 100%;
+    justify-content: center;
+  }
 }
 @media (max-width:500px) {
   .leftTitle {
@@ -256,3 +277,96 @@ a {
     max-width: 500px;
   }
 }
+.featuresHeading {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #ebebe1;
+}
+.featuresInfo {
+  background-color: #ebebe1;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-top: 3em;
+  /* @media(@phone){
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    } */
+}
+@media (max-width:800px) {
+  .featuresInfo {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+}
+.boxLeft {
+  height: 230px;
+  width: 20%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+}
+@media (max-width:800px) {
+  .boxLeft {
+    width: 100%;
+    align-items: center;
+    border-left: none;
+  }
+}
+/* @media(@phone){
+        width: 100%;
+        align-items: center;
+        border-left: none;
+    } */
+.middleBox {
+  border-left: solid black 1px;
+  border-right: solid black 1px;
+  height: 230px;
+  width: 20%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+}
+@media (max-width:800px) {
+  .middleBox {
+    width: 100%;
+    align-items: center;
+    border-left: none;
+    border-right: none;
+  }
+}
+/*  @media(@phone){
+        width: 100%;
+        align-items: center;
+        border-left: none;
+        border-right: none;
+    } */
+.boxRight {
+  height: 230px;
+  width: 20%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+}
+@media (max-width:800px) {
+  .boxRight {
+    width: 100%;
+    align-items: center;
+    border-right: none;
+  }
+}
+/*  @media(@phone){
+        width: 100%;
+        align-items: center;
+        border-right: none;
+    } */
