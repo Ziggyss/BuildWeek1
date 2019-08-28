@@ -361,3 +361,77 @@ a {
     background-image: url("./Images/aboutImage.jpeg");
     background-color: #cccccc;
 } */
+.signUpContainer {
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  position: relative;
+  width: 800px;
+  height: 592px;
+  background: #FFF;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+.leftSignUp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 400px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+@media (max-width:850px) {
+  .leftSignUp {
+    width: 100%;
+  }
+}
+.rightSignUp {
+  width: 50%;
+}
+@media (max-width:850px) {
+  .rightSignUp {
+    display: none;
+  }
+}
+.getStartedText {
+  padding-bottom: 20px;
+}
+input[type="text"],
+input[type="password"],
+input[type="tel"] {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 220px;
+  height: 32px;
+  border: 1px solid #AAA;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+input[type="submit"] {
+  margin-top: 28px;
+  cursor: pointer;
+  background-color: #4c812b;
+  border: none;
+  font-size: 2.4rem;
+  color: white;
+  padding: 1.2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  text-align: center;
+  display: inline-block;
+  border-radius: 0.8rem;
+}
+@media (max-width:850px) {
+  .signUpImg {
+    display: none;
+  }
+}
