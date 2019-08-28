@@ -223,6 +223,7 @@ a {
   font-size: 8rem;
   padding-right: 1rem;
   padding-bottom: 1rem;
+  color: #4c812b;
 }
 .leftTitle {
   width: 50%;
@@ -315,6 +316,7 @@ a {
   flex-direction: column;
   justify-content: center;
   padding: 3rem;
+  justify-content: space-around;
 }
 @media (max-width:800px) {
   .boxLeft {
@@ -333,6 +335,7 @@ a {
   flex-direction: column;
   justify-content: center;
   padding: 3rem;
+  justify-content: space-around;
 }
 @media (max-width:800px) {
   .middleBox {
@@ -350,6 +353,7 @@ a {
   flex-direction: column;
   justify-content: center;
   padding: 3rem;
+  justify-content: space-around;
 }
 @media (max-width:800px) {
   .boxRight {
@@ -357,6 +361,10 @@ a {
     align-items: center;
     border-right: none;
   }
+}
+.fas,
+.far {
+  font-size: 3rem;
 }
 .aboutContainer {
   background-image: url("../Images/aboutImage2.jpeg");
