@@ -39,6 +39,12 @@
     align-items: baseline;
     justify-content: space-around;
     width: 55%;
+    @media(@tabletWide){
+      width: 30%;
+    }
+    @media(~'max-width:550px'){
+      width: 50%;
+    }
   }
   .rightSignUp {
     width: 50%;
