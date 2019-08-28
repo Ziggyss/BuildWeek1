@@ -375,11 +375,13 @@ a {
   font-size: 3rem;
 }
 .aboutMe {
+  height: 420px;
   padding-top: 10%;
   margin-left: 40%;
   width: 40%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .aboutAnchor {
   font-size: 1.8rem;
