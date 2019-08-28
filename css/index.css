@@ -219,8 +219,10 @@ a {
     max-width: 500px;
   }
 }
-.jumboIcon {
-  height: 10rem;
+#jumboIcon {
+  font-size: 8rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
 }
 .leftTitle {
   width: 50%;
