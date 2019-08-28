@@ -174,9 +174,10 @@ a {
   font-family: 'Roboto';
   color: black;
 }
-.navIcon {
-  height: 2.4rem;
+/* #navIcon {
+    height: 2.4rem;
 }
+ */
 .navbar {
   display: flex;
   align-items: center;
