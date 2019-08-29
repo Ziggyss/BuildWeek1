@@ -466,6 +466,7 @@ a {
 @media (max-width:850px) {
   .leftSignUp {
     width: 100%;
+    background-color: #f4f4f4;
   }
 }
 #signUpIcon {
@@ -485,6 +486,11 @@ a {
 @media (max-width:550px) {
   .signUpTitle {
     width: 50%;
+  }
+}
+@media (max-width: 365px) {
+  .signUpTitle {
+    width: 70%;
   }
 }
 .rightSignUp {
