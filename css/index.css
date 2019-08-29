@@ -153,13 +153,28 @@ h1 {
   font-family: 'Rubik', sans-serif;
   color: #4c812b;
 }
+@media (max-width: 420px) {
+  h1 {
+    font-size: 8rem;
+  }
+}
 h2 {
   font-size: 6.4rem;
   font-family: 'Roboto';
 }
+@media (max-width: 420px) {
+  h2 {
+    font-size: 5.8rem;
+  }
+}
 h3 {
   font-size: 2.4rem;
   font-family: 'Roboto';
+}
+@media (max-width: 420px) {
+  h3 {
+    text-align: center;
+  }
 }
 h4 {
   font-size: 2.2rem;
@@ -235,6 +250,11 @@ a {
   padding-bottom: 1rem;
   color: #4c812b;
 }
+@media (max-width: 420px) {
+  #jumboIcon {
+    font-size: 5rem;
+  }
+}
 .leftTitle {
   width: 50%;
   height: 18rem;
@@ -252,6 +272,11 @@ a {
   .leftTitle {
     width: 100%;
     padding-right: 3em;
+  }
+}
+@media (max-width: 420px) {
+  .leftTitle {
+    padding-right: 0;
   }
 }
 .rightTitle {
@@ -291,9 +316,17 @@ a {
   color: #4c812b;
   border: #4c812b solid 2px;
 }
+.mainImage {
+  width: 100%;
+}
+@media (max-width:800px) {
+  .mainImage {
+    display: none;
+  }
+}
 @media (max-width:500px) {
   .mainImage {
-    max-width: 500px;
+    display: none;
   }
 }
 .featuresHeading {
