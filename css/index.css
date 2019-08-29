@@ -334,9 +334,10 @@ a {
 }
 @media (min-width: 1437px) {
   .mainImage {
-    justify-content: center;
     background-color: #ebebe1;
-    margin: 0 auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .featuresHeading {
