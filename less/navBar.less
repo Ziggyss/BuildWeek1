@@ -23,9 +23,7 @@
     .featuresAnchor {
         @media(@tablet){
             display:none;
-        }
-        @media(@phone){
-            display: none;
+            width: 60%;
         }
     }
 }
@@ -36,6 +34,10 @@
     justify-content: flex-end;
     align-items: center;
     padding-right: 5rem; 
+    @media(@tablet){
+        padding-right: 2rem;
+        width: 40%;
+    }
 }
 #logIn {
   display: block;

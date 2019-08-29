@@ -212,11 +212,7 @@ a {
 @media (max-width:800px) {
   .leftNav .featuresAnchor {
     display: none;
-  }
-}
-@media (max-width:500px) {
-  .leftNav .featuresAnchor {
-    display: none;
+    width: 60%;
   }
 }
 .rightNav {
@@ -225,6 +221,12 @@ a {
   justify-content: flex-end;
   align-items: center;
   padding-right: 5rem;
+}
+@media (max-width:800px) {
+  .rightNav {
+    padding-right: 2rem;
+    width: 40%;
+  }
 }
 #logIn {
   display: block;
