@@ -239,7 +239,7 @@ li {
 .toggleLabel {
   display: none;
 }
-@media (max-width:500px) {
+@media (max-width:800px) {
   .navbar ul {
     width: 100%;
   }
@@ -261,7 +261,7 @@ li {
   }
   li {
     border-bottom: 1px solid #ebebe1;
-    color: purple;
+    color: black;
     display: block;
     font-size: 1.5rem;
     padding: 2rem 0;
@@ -295,7 +295,7 @@ li {
   color: #ebebe1;
   background-color: #4c812b;
 }
-@media (max-width:500px) {
+@media (max-width:800px) {
   #logIn {
     display: initial;
     background-color: initial;
@@ -308,7 +308,7 @@ li {
     color: #ebebe1;
   }
 }
-@media (max-width:500px) {
+@media (max-width:800px) {
   .logInListItem {
     padding: 3.5rem 0;
   }
