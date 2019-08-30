@@ -76,6 +76,57 @@
     background-color: #ebebe1;
     border-bottom: solid white 1px;
 }
+
+.box {
+  width: 28%;
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  padding-top: 20px;
+  p {
+    padding-top: 20px;
+    padding-left:10px;
+    padding-right: 10px;
+  }
+  @media(@tablet){
+    width: 100%;
+    border-bottom: 1px solid black;
+  }
+}
+#seedlingBox {
+  border-bottom: initial;
+}
+.boxMiddle {
+  border-left: solid 1px black;
+  border-right: solid 1px black;
+  @media(@tablet){
+    border-left: initial;
+    border-right: initial;
+  }
+}
+.row1 {
+  display:flex;
+  justify-content: center;
+  border-bottom: 1px solid black;
+  width: 50%;
+  margin: 0 auto;
+  @media(@tablet){
+    flex-direction: column;
+    width: 90%;
+  }
+
+}
+.row2 {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+  @media(@tablet){
+    flex-direction: column;
+    width: 90%;
+  }
+}
+
 .featuresInfo{
     background-color: #ebebe1;
     display: flex;
