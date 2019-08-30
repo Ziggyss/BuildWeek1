@@ -1,28 +1,146 @@
 #navIcon {
-    font-size: 2rem;
+  padding: 1.8rem;
+}
+.navContainer {
+  background-color: @mediumColour;
+  width: 100%;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  font-size: 1.8rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  position: fixed;
+  min-width: 100%;
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly; 
-    width: 100%;
-    height: 5rem;
-    border-bottom: white solid 1px;
-    background-color: #b6c8a9;
-    position: fixed;
-    top: 0;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 50%;
+  }
+
+  a {
+    color: @lightColour;
+    transition: all 0.5 ease;
+    padding: 1.8rem;
+    display: block;
+
+    &:hover {
+      color: @darkColour;
+      @media (@tablet) {
+        color: @lightColour;
+      }
+    }
+  }
+}
+
+li {
+  display: inline-block;
+}
+
+#toggleMenu {
+  display: none;
+}
+
+.toggleLabel {
+  display: none;
+}
+
+@media (@phone) {
+  .navbar {
+    ul {
+      width: 100%;
+      a {
+        color: black;
+      }
+    }
+  }
+  ul {
+    background-color: @darkColour;
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    list-style-type: none;
+    opacity: 0;
+    text-align: center;
+    transition: all 1s ease;
+    width: 100%;
+    visibility: hidden;
+    border-radius: 5px;
+  }
+
+  li {
+    border-bottom: 1px solid @lightColour;
+    color: purple;
+    display: block;
+    font-size: 1.5rem;
+    padding: 2rem 0;
+  }
+
+  #toggleMenu:checked ~ ul {
+    opacity: 1;
+    height: 400px;
+    visibility: visible;
+  }
+
+  .toggleLabel {
+    background: linear-gradient(
+      to bottom,
+      @darkColour 0%,
+      @darkColour 20%,
+      transparent 20%,
+      transparent 40%,
+      @darkColour 40%,
+      @darkColour 60%,
+      transparent 60%,
+      transparent 80%,
+      @darkColour 80%,
+      @darkColour 100%
+    );
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 3.5rem;
+    margin-top: 1rem;
+    width: 3.5rem;
+  }
+  .navbar {
+    display: block;
+  }
 }
 
 #logIn {
   display: block;
-  background-color: white;
-  text-align: center;
-  height: 40px;
-  width: 100px;
-  padding: 0.9rem;
+  background-color: @lightColour;
+  color: @darkColour;
+  padding: 1.6rem;
   border-radius: 5px;
-  color: #4c812b;
-  
+  &:hover {
+    color: @lightColour;
+    background-color: @darkColour;
+  }
+  @media (@phone) {
+    display: initial;
+    background-color: initial;
+    color: black;
+    border-radius: none;
+    padding: initial;
+    &:hover {
+      background-color: initial;
+      color: @lightColour;
+    }
+  }
+}
+.logInListItem {
+    @media(@phone){
+        padding: 3.5rem 0;
+    }
 }

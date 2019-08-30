@@ -190,53 +190,128 @@ a {
   color: black;
 }
 #navIcon {
-  font-size: 2rem;
+  padding: 1.8rem;
+}
+.navContainer {
+  background-color: #b6c8a9;
+  width: 100%;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  font-size: 1.8rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  position: fixed;
+  min-width: 100%;
 }
 .navbar {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-  height: 5rem;
-  border-bottom: white solid 1px;
-  background-color: #b6c8a9;
-  position: fixed;
-  top: 0;
+  justify-content: space-between;
 }
-.leftNav {
-  width: 50%;
+.navbar ul {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 50%;
+}
+.navbar a {
+  color: #ebebe1;
+  transition: all 0.5 ease;
+  padding: 1.8rem;
+  display: block;
+}
+.navbar a:hover {
+  color: #4c812b;
 }
 @media (max-width:800px) {
-  .leftNav .featuresAnchor {
-    display: none;
-    width: 60%;
+  .navbar a:hover {
+    color: #ebebe1;
   }
 }
-.rightNav {
-  width: 50%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding-right: 5rem;
+li {
+  display: inline-block;
 }
-@media (max-width:800px) {
-  .rightNav {
-    padding-right: 2rem;
-    width: 40%;
+#toggleMenu {
+  display: none;
+}
+.toggleLabel {
+  display: none;
+}
+@media (max-width:500px) {
+  .navbar ul {
+    width: 100%;
+  }
+  .navbar ul a {
+    color: black;
+  }
+  ul {
+    background-color: #4c812b;
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    list-style-type: none;
+    opacity: 0;
+    text-align: center;
+    transition: all 1s ease;
+    width: 100%;
+    visibility: hidden;
+    border-radius: 5px;
+  }
+  li {
+    border-bottom: 1px solid #ebebe1;
+    color: purple;
+    display: block;
+    font-size: 1.5rem;
+    padding: 2rem 0;
+  }
+  #toggleMenu:checked ~ ul {
+    opacity: 1;
+    height: 400px;
+    visibility: visible;
+  }
+  .toggleLabel {
+    background: linear-gradient(to bottom, #4c812b 0%, #4c812b 20%, transparent 20%, transparent 40%, #4c812b 40%, #4c812b 60%, transparent 60%, transparent 80%, #4c812b 80%, #4c812b 100%);
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 3.5rem;
+    margin-top: 1rem;
+    width: 3.5rem;
+  }
+  .navbar {
+    display: block;
   }
 }
 #logIn {
   display: block;
-  background-color: white;
-  text-align: center;
-  height: 40px;
-  width: 100px;
-  padding: 0.9rem;
-  border-radius: 5px;
+  background-color: #ebebe1;
   color: #4c812b;
+  padding: 1.6rem;
+  border-radius: 5px;
+}
+#logIn:hover {
+  color: #ebebe1;
+  background-color: #4c812b;
+}
+@media (max-width:500px) {
+  #logIn {
+    display: initial;
+    background-color: initial;
+    color: black;
+    border-radius: none;
+    padding: initial;
+  }
+  #logIn:hover {
+    background-color: initial;
+    color: #ebebe1;
+  }
+}
+@media (max-width:500px) {
+  .logInListItem {
+    padding: 3.5rem 0;
+  }
 }
 .jumbo {
   background-color: #ebebe1;
