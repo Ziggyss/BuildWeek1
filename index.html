@@ -1,30 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Water My Plants</title>
-    <link rel="stylesheet" href="css/index.css">
-</head>
-
-<body>
-    <div class="container">
-        <div class="navbar">
-            <a href="">Home</a>
-            <a href="">About Us</a>
-            <a href="">Features</a>
-            <a href="">Log In</a>
-        </div>
-        <div class="jumbo">
-            <h1>Water</h1>
-            <h2>my Plants</h2>
-            <h3>Take the guesswork out of your garden.</h3>
-            <button>Get Started</button>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins|Roboto|Rubik:900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>NavBar redo</title>
+  </head>
+  <!-- This navbar would be outside of the main container -->
+  <body>
+    <div class="navContainer">
+      <nav class="navbar">
+        <i class="fas fa-tint" id="navIcon"></i>
+        <input type="checkbox" id="toggleMenu" />
+        <label for="toggleMenu" class="toggleLabel"></label>
+        <ul>
+          <li><a class="link" href="#">Home</a></li>
+          <li><a class="link" href="#">About</a></li>
+          <li><a class="featuresAnchor" href="javascript: document.body.scrollIntoView(false);">Features</a></li>
+          <li class="logInListItem"><a id="logIn" href="#">Login</a></li>
+        </ul>
+      </nav>
     </div>
-
-</body>
-
+    <div class="jumbo">
+      <div class="title">
+        <h1><i id="jumboIcon" class="fas fa-tint slide-in-top"></i>Water</h1>
+      </div>
+        <div>
+        <h2>my Plants</h2>
+        </div>
+      <div id="subTitle">
+          <h3>Take the guesswork out of your garden.<h3>
+        </div>
+          <div class="buttonDiv">
+          <a href="getStarted.html" class="mainButton">Get Started</a>
+          </div>
+      </div>
+      <div class="imageContainer">   
+      </div>
+      <div class="featuresHeading">
+          <h3>Features</h3>
+        </div>
+     <div class="features">
+          <div class="row1">
+          <div class="box">
+              <i class = "far fa-comment-dots"></i>
+                <p>SMS reminders keep you on track so you'll never forget to water your plants again.</p>
+          </div>
+          <div class="box boxMiddle">
+              <i class="fas fa-globe"></i>
+              <p>Receive plant information tailored to your growing zone.</p>
+          </div>
+          <div class="box" id="seedlingBox">
+              <i class="fas fa-seedling"></i>
+              <p>Create fully customisable schedules for both indoor and outdoor plants.</p>
+          </div>
+        </div>
+        <div class="row2">
+          <div class="box">
+                <i class="far fa-calendar-alt"></i>
+              <p>View your watering calendar in month, list or week mode at the click of a button.</p>
+          </div>
+          <div class="box boxMiddle">
+                <i class="far fa-thumbs-up"></i>
+              <p>Add friends and share your plant photos, tips and success stories in our online community.</p>
+          </div>
+          <div class="box">
+                <i class="fas fa-check"></i>
+              <p>Growing plants indoors or out has never been easier.</p>
+          </div>
+          </div>
+      </div>
+    <script src="https://kit.fontawesome.com/74a2ccb91e.js"></script>
+  </body>
 </html>
